@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "offline-form-client-side-solution",
+    "id": "314adb4a-6dbf-4cfd-9c15-c9ac4209fa54",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.0-rc.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "offline-form description"
+      },
+      "longDescription": {
+        "default": "offline-form description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "offline-form Feature",
+        "description": "The feature that activates elements of the offline-form solution.",
+        "id": "fc6e857a-2476-48e5-af4d-eabcb011f7cc",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/offline-form.sppkg"
+  }
+}

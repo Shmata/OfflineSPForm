@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "offline-sp-form-form-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/offlineSpForm/OfflineSpFormFormCustomizer.js",
+          "manifest": "./src/extensions/offlineSpForm/OfflineSpFormFormCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OfflineSpFormFormCustomizerStrings": "lib/extensions/offlineSpForm/loc/{locale}.js"
+  }
+}

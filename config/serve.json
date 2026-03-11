@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "tryCreateDevCertificate": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "<<yourTenantURL>>/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "5a3deeb7-5082-44e7-b72c-920752256a8c",
+        "PageType": 8,
+        "RootFolder": "/sites/DevStage/Lists/IssueTracker",
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "offlineSpForm_NewForm": {
+      "pageUrl": "<<yourTenantURL>>/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "5a3deeb7-5082-44e7-b72c-920752256a8c",
+        "PageType": 8,
+        "RootFolder": "/sites/DevStage/Lists/IssueTracker",
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "offlineSpForm_EditForm": {
+      "pageUrl": "<<yourTenantURL>>/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "5a3deeb7-5082-44e7-b72c-920752256a8c",
+        "PageType": 6,
+        "RootFolder": "/sites/DevStage/Lists/IssueTracker",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "offlineSpForm_ViewForm": {
+      "pageUrl": "<<yourTenantURL>>/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "5a3deeb7-5082-44e7-b72c-920752256a8c",
+        "PageType": 4,
+        "RootFolder": "/sites/DevStage/Lists/IssueTracker",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    }
+  }
+}

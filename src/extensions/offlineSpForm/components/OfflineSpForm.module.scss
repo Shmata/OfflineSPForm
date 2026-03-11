@@ -1,0 +1,44 @@
+.offlineSpForm {
+  background-color: "[theme:white, default:#ffffff]";
+  color: "[theme:themePrimary, default:#0078d4]";
+  padding: 0.5rem;
+}
+
+.mainStack {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .mainStack {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.statusRow {
+  --offlineSpForm-statusDotColor: "[theme:errorText, default:#a4262c]";
+}
+
+.statusDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--offlineSpForm-statusDotColor);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.statusDotButton {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--offlineSpForm-statusDotColor);
+  border: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.statusDotButton:disabled {
+  opacity: 1;
+  cursor: default;
+}

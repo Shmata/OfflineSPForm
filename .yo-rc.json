@@ -1,0 +1,20 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "24.12.0",
+    "sdksVersions": {},
+    "version": "1.22.0-rc.1",
+    "libraryName": "offline-form",
+    "libraryId": "314adb4a-6dbf-4cfd-9c15-c9ac4209fa54",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "offline-form",
+    "solutionShortDescription": "offline-form description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "FormCustomizer"
+  }
+}
