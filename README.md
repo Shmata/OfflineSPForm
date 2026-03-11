@@ -2,7 +2,7 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. Once connectivity is restored, the data will be saved to the associated SharePoint list.
 
 [picture of the solution in action, if possible]
 
