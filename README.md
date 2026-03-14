@@ -8,6 +8,7 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 
 ## Used SharePoint Framework Version
 
+
 ![version](https://img.shields.io/badge/version-1.22.0--rc.1-yellow.svg)
 
 ## Solution
