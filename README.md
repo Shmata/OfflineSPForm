@@ -2,9 +2,12 @@
 It is a form customizer.
 
 ## Summary
+In many fields, especially construction, inspectors often need to visit job sites and record information directly into a SharePoint list. Because network coverage on construction sites can be unreliable, there’s a real risk of losing data while filling out forms. This form customizer is designed to prevent that problem by allowing inspectors to keep working even when the connection drops, and then automatically syncing their entries once the network is restored.
+<br/>
+This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. I used the [Dexie library](https://www.npmjs.com/package/dexie) as a lightweight wrapper around IndexedDB in this project. Once connectivity is restored, the locally stored data will be saved to the associated SharePoint list. <br/>
+This form customizer is connected to the built‑in 'Issue Tracker' list to demonstrate how you can prevent data loss in areas with weak or unstable network coverage. You can absolutely use it with any other SharePoint list—you just need to define the correct interface for that list and update the list’s GUID in the code.
 
-This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. Once connectivity is restored, the locally stored data will be saved to the associated SharePoint list. <br/>
-This form customizer is connected to the built‑in Issue Tracker list to demonstrate how you can prevent data loss in areas with weak or unstable network coverage. You can absolutely use it with any other SharePoint list—you just need to define the correct interface for that list and update the list’s GUID in the code.
+![Network indicator](https://github.com/Shmata/OfflineSPForm/blob/main/src/extensions/offlineSpForm/assets/2.png)
 
 ## Used SharePoint Framework Version
 
@@ -27,6 +30,7 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 ---
 
 ## Create a package
+Creating and installing this package works the same way as any other SPFx Form Customizer. There’s nothing unique or special about its packaging process, and the standard SPFx build, bundle, and deploy steps apply. For additional guidance, the [Microsoft documentation on SPFx extensions](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-form-customizer#deployment-of-your-extension) covers the full workflow clearly and is the best reference to follow. <br/> 
 
 - Clone this repository
 - Ensure that you are at the solution folder
@@ -35,24 +39,25 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
   - **heft package-solution --production**
 - The generated package file (.sppkg) will be located in the `SharePoint/Solutions`
 
-## Features
+## Operating Procedure
 
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+After you deploy the form customizer and link it to your SharePoint list, just open the list and select New item—your custom form will load automatically.
+![New form](https://github.com/Shmata/OfflineSPForm/blob/main/src/extensions/offlineSpForm/assets/1.png)
+<br/><br/>
+The default SharePoint list form appears along with a built‑in network indicator.
+<br/><br/>
+![No Network](https://github.com/Shmata/OfflineSPForm/blob/main/src/extensions/offlineSpForm/assets/3.png)
+<br/><br/>
+If your connection becomes weak or drops entirely, the indicator reflects that change. <br/><br/>
+![Fillout form](https://github.com/Shmata/OfflineSPForm/blob/main/src/extensions/offlineSpForm/assets/4.png)
+<br/><br/>
+You can continue filling out the form normally—just leave it as is when you're done. Once your network connection returns, the form automatically syncs and saves your item back to SharePoint.
+<br/><br/>
+![Synce](https://github.com/Shmata/OfflineSPForm/blob/main/src/extensions/offlineSpForm/assets/5.png)
+<br/><br/>
+It works on new and update forms. 
 
 ## References
 
 - [Getting started with SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+- [Deployment of your Extension](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-form-customizer#deployment-of-your-extension)
