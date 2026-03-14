@@ -6,8 +6,6 @@ It is a form customizer.
 This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. Once connectivity is restored, the locally stored data will be saved to the associated SharePoint list. <br/>
 This form customizer is connected to the built‑in Issue Tracker list to demonstrate how you can prevent data loss in areas with weak or unstable network coverage. You can absolutely use it with any other SharePoint list—you just need to define the correct interface for that list and update the list’s GUID in the code.
 
-[picture of the solution in action, if possible]
-
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.22.0--rc.1-yellow.svg)
@@ -33,12 +31,8 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+| 1.1     | March 12, 2026   | Update comment  |
+| 1.0     | March 10, 2026   | Initial release |
 
 ---
 
@@ -47,10 +41,8 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
-  - **npm install**
+  - **npm install** 
   - **npm run start**
-
-> Include any additional steps as needed.
 
 ## Features
 
