@@ -1,8 +1,10 @@
-# offline-form
+# Offline SP Form
+It is a form customizer.
 
 ## Summary
 
-This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. Once connectivity is restored, the data will be saved to the associated SharePoint list.
+This SPFx list form customizer enables users to input offline entries, specifically in areas with no network or intermittent internet access. All submitted items will be stored locally in an IndexedDB. Once connectivity is restored, the locally stored data will be saved to the associated SharePoint list. <br/>
+This form customizer is connected to the built‑in Issue Tracker list to demonstrate how you can prevent data loss in areas with weak or unstable network coverage. You can absolutely use it with any other SharePoint list—you just need to define the correct interface for that list and update the list’s GUID in the code.
 
 [picture of the solution in action, if possible]
 
@@ -23,9 +25,9 @@ This SPFx list form customizer enables users to input offline entries, specifica
 
 ## Solution
 
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Solution      | Author(s)                                               |
+| ------------- | ------------------------------------------------------- |
+| offlineSpForm | Shahab Matapour ([LinkedIn profile](https://www.linkedin.com/in/shahabmatapour/))|
 
 ## Version history
 
