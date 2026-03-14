@@ -25,13 +25,14 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 
 ---
 
-## Minimal Path to Awesome
+## Create a package
 
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
-  - **npm install** 
-  - **npm run start**
+  - **heft build** 
+  - **heft package-solution --production**
+- The generated package file (.sppkg) will be located in the `SharePoint/Solutions`
 
 ## Features
 
