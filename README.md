@@ -10,17 +10,6 @@ This form customizer is connected to the built‑in Issue Tracker list to demons
 
 ![version](https://img.shields.io/badge/version-1.22.0--rc.1-yellow.svg)
 
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
 ## Solution
 
 | Solution      | Author(s)                                               |
