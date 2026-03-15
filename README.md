@@ -61,3 +61,8 @@ It works on new and update forms.
 
 - [Getting started with SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-developer-tenant)
 - [Deployment of your Extension](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/building-form-customizer#deployment-of-your-extension)
+
+## ⭐ Final Recommendation
+
+If you found this project useful, give it a star ⭐ and become **0.1% cooler instantly**. <br />
+It's scientifically unproven… but widely believed.
